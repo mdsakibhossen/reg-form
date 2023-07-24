@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #75ACE0, #9367BC);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+
+.form__container {
+    max-width: 800px;
+    width: 90%;
+    background-color: #FFFFFF;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    border-radius: .2rem;
+}
+
+.form__container>h2 {
+    font-weight: 500;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.form__container>h2::before {
+    content: "";
+    width: 1.75rem;
+    height: .2rem;
+    display: inline-block;
+    background: linear-gradient(to right, #75ACE0, #9367BC);
+    border-radius: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.form .top-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.form-field>label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.form-field input:not([type="radio"]) {
+    display: block;
+    width: 100%;
+    box-shadow: 0px 0px 2px 0px #00000045;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+}
+
+.gender-title {
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
+.option {
+    flex-basis: 10rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+input[type="radio"] {
+    position: relative;
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+input[type="radio"]::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked::before {
+    background: linear-gradient(to bottom right, #75ACE0, #9367BC);
+}
+
+.btn-box {
+    margin-top: 1.5rem;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    background: linear-gradient(to right, #75ACE0, #9367BC);
+    color: #FFFFFF;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.submit-btn:hover {
+    letter-spacing: 5px;
+}
+
